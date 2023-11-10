@@ -30,9 +30,7 @@
 }
 
 /* Event click */
-.btn:hover {
-  cursor: pointer;
-}
+
 .btn:hover .btn__text::after {
   transform: scaleX(1);
   opacity: 1;
