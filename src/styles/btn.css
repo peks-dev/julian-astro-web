@@ -1,0 +1,68 @@
+.btn {
+  height: 2.5rem;
+  white-space: nowrap;
+  display: flex;
+  gap: 0.5rem;
+  color: var(--accent-black);
+  align-items: center;
+}
+
+.btn__text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  align-self: center;
+  line-height: normal;
+}
+.btn__number {
+  align-self: self-start;
+}
+
+/* down line */
+.btn__text::after {
+  content: "";
+  display: block;
+  background-color: currentColor;
+  width: 100%;
+  height: 0.2rem;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+/* Event click */
+.btn:hover {
+  cursor: pointer;
+}
+.btn:hover .btn__text::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.btn:active .btn__text {
+  transform: translateY(-0.5rem);
+}
+
+/* Home slider destop changes*/
+.slider-v2 .btn {
+  color: currentColor;
+}
+
+/* Navbar & footer btns */
+.navbar__link-item:hover > .navbar__link-btn .btn__text::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.footer:hover .btn__text::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.navbar__submenu-item:hover .btn__text {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .slider-v2 .btn {
+    color: var(--accent-black);
+  }
+}

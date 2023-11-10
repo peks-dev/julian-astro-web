@@ -1,0 +1,99 @@
+---
+import Instagram from "./icons/social/Instagram.astro";
+import Vimeo from "./icons/social/Vimeo.astro";
+import Imdb from "./icons/social/Imdb.astro";
+import Modal from "./Modal.astro";
+---
+
+<footer class="footer">
+  <input name="modal-trigger" id="modal-trigger" type="checkbox" />
+  <Modal />
+  <div class="btn">
+    <label for="modal-trigger" class="btn__number">04</label><label
+      for="modal-trigger"
+      class="btn__text">contact</label
+    >
+  </div>
+  <ul class="social-icons">
+    <li class="social-icons__item">
+      <a href="https://www.instagram.com/julescamo/?igshid=MzRlODBiNWFlZA%3D%3D"
+        ><Instagram /></a
+      >
+    </li>
+    <li class="social-icons__item">
+      <a href="https://vimeo.com/user2658772"><Vimeo /></a>
+    </li>
+    <li class="social-icons__item">
+      <a href="https://www.imdb.com/"><Imdb /></a>
+    </li>
+  </ul>
+</footer>
+<style is:global>
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    width: 15vw;
+    max-width: 13rem;
+    z-index: 3;
+  }
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+    position: relative;
+    z-index: 4;
+    background-color: var(--accent-white);
+    padding: 1rem 0.5rem;
+  }
+
+  .social-icons__item {
+    width: clamp(2.8rem, 3vw, 3rem);
+    height: clamp(2.8rem, 3vw, 3rem);
+    transition: transform 0.5s;
+  }
+  .social-icons__item img {
+    width: 100%;
+  }
+  .social-icons__item:hover {
+    transform: scale(1.2);
+  }
+
+  /* Modal interaction */
+
+  /* input*/
+  #modal-trigger {
+    display: none;
+  }
+  input#modal-trigger:checked + .modal {
+    display: grid; /* Cuando el input "modal-trigger" está checked, el modal se muestra */
+  }
+
+  /* responsive */
+  @media screen and (max-width: 800px) {
+    .footer {
+      justify-content: space-between;
+      align-content: center;
+      width: 100vw;
+      min-width: 100vw;
+      height: 10vh;
+      border-top: 0.1rem var(--accent-black) solid;
+      background-color: var(--accent-white);
+    }
+    .social-icons {
+      justify-content: flex-end;
+      position: relative;
+    }
+  }
+</style>

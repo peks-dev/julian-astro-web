@@ -1,0 +1,331 @@
+---
+
+---
+
+<header class="navbar">
+  <input id="hamburger" name="hamburger" type="checkbox" />
+  <a href="/" class="navbar__logo">
+    <span>julian</span><span>collazo</span><span>bass</span>
+  </a>
+  <nav class="navbar__links">
+    <ul class="navbar__links-wrap">
+      <li class="navbar__link-item">
+        <button class="navbar__link-btn">
+          <span>01</span><span class="btn__text">narrative</span>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0.00 0.00 96.00 96.00"
+            >
+              <path
+                d="
+              M 44.11 48.16
+              L 67.70 83.52
+              A 0.31 0.31 0.0 0 1 67.44 84.00
+              L 52.18 84.00
+              A 0.31 0.31 0.0 0 1 51.92 83.86
+              L 28.11 48.16
+              A 0.31 0.31 0.0 0 1 28.11 47.82
+              L 51.91 12.14
+              A 0.31 0.31 0.0 0 1 52.17 12.00
+              L 67.43 12.00
+              A 0.31 0.31 0.0 0 1 67.69 12.48
+              L 44.11 47.82
+              A 0.31 0.31 0.0 0 0 44.11 48.16
+              Z"
+              ></path>
+            </svg>
+          </div>
+        </button>
+        <ul class="navbar__submenu-wrap">
+          <li class="navbar__submenu-item">
+            <a class="btn__text" href="/narrative/Lily">lily</a>
+          </li>
+          <li class="navbar__submenu-item">
+            <a class="btn__text" href="/narrative/Ptsd">ptsd</a>
+          </li>
+          <li class="navbar__submenu-item">
+            <a class="btn__text" href="/narrative/FaceValues">face values</a>
+          </li>
+          <li class="navbar__submenu-item">
+            <a class="btn__text" href="/narrative/ChocolateCake"
+              >chocolate cake</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="navbar__link-item">
+        <button class="navbar__link-btn">
+          <span>02</span><span class="btn__text">commercial</span>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0.00 0.00 96.00 96.00"
+            >
+              <path
+                d="
+            M 44.11 48.16
+            L 67.70 83.52
+            A 0.31 0.31 0.0 0 1 67.44 84.00
+            L 52.18 84.00
+            A 0.31 0.31 0.0 0 1 51.92 83.86
+            L 28.11 48.16
+            A 0.31 0.31 0.0 0 1 28.11 47.82
+            L 51.91 12.14
+            A 0.31 0.31 0.0 0 1 52.17 12.00
+            L 67.43 12.00
+            A 0.31 0.31 0.0 0 1 67.69 12.48
+            L 44.11 47.82
+            A 0.31 0.31 0.0 0 0 44.11 48.16
+            Z"
+              ></path>
+            </svg>
+          </div>
+        </button>
+        <ul class="navbar__submenu-wrap">
+          <li class="navbar__submenu-item">
+            <a class="btn__text" href="/commercial/ModPizza">mod pizza</a>
+          </li>
+          <li class="navbar__submenu-item">
+            <a class="btn__text" href="/commercial/BeatnikReebok"
+              >beatnik x reebok</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="navbar__link-item">
+        <button class="navbar__link-btn">
+          <span>03</span><a class="btn__text" href="/About">about</a>
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <label class="navbar__hamburger" for="hamburger">menu</label>
+</header>
+
+<style>
+  .navbar {
+    background-color: var(--accent-white);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: first baseline;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5vw;
+    gap: 4rem;
+    position: relative;
+    z-index: 3;
+  }
+  .navbar__logo {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    gap: 1rem;
+    margin: 3vh 0 3.5vh 0;
+    flex-grow: 1;
+    color: var(--accent-black);
+  }
+  .navbar__logo span {
+    font-family: var(--font-primary);
+    font-size: clamp(4rem, 5vw, 8rem);
+
+    line-height: 0.6em;
+    text-transform: uppercase;
+  }
+  .navbar__links {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar__links-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-height: 25px;
+    transition: background-color 3s;
+  }
+
+  .navbar__link-item {
+    width: 12.2rem;
+    max-width: 12.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar__link-item:last-child {
+    width: auto;
+  }
+  .navbar__link-btn {
+    height: 2.5rem;
+    white-space: nowrap;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .navbar__link-btn div {
+    width: 10px;
+    height: 10px;
+    align-self: center;
+    transition: transform 0.6s;
+  }
+
+  /* Submenu */
+  .navbar__submenu-wrap {
+    display: none;
+    opacity: 0;
+    transition: opacity 3s;
+    gap: 2.5rem;
+    margin: 0 0 0 auto;
+    padding: 1rem 2rem;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  /* submenu -active*/
+  .navbar__link-item:hover .navbar__submenu-wrap {
+    display: block;
+    opacity: 1;
+  }
+  .navbar__link-item:hover > .navbar__link-btn div {
+    transform: rotate(-90deg);
+  }
+
+  /* Responsive menu - mobile */
+  /* Desktop*/
+  .navbar__hamburger {
+    display: none;
+    width: auto;
+    flex: 1 1 auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 6rem;
+  }
+  hamburger:hover {
+    transform: scale(1.1);
+  }
+  #hamburger {
+    display: none;
+  }
+
+  /* When is active */
+  #hamburger:checked ~ .navbar__links {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--accent-black);
+    color: var(--accent-white);
+    flex-grow: 2;
+  }
+  #hamburger:checked ~ .navbar__links > .navbar__links-wrap {
+    width: 70%;
+    height: 100%;
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 15vh;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  #hamburger:checked ~ .navbar__links .navbar__link-item {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  /* menu */
+  #hamburger:checked ~ .navbar__links .navbar__link-item .navbar__link-btn {
+    height: 6rem;
+  }
+
+  /* submenu*/
+  #hamburger:checked ~ .navbar__links .navbar__link-item .navbar__link-btn div {
+    width: 3rem;
+    height: 3rem;
+  }
+  #hamburger:checked
+    ~ .navbar__links
+    .navbar__link-item
+    .navbar__link-btn
+    div
+    svg {
+    fill: var(--accent-white);
+  }
+  #hamburger:checked
+    ~ .navbar__links
+    .navbar__link-item
+    .navbar__link-btn
+    .btn__text {
+    font-size: 3.5rem;
+  }
+  #hamburger:checked
+    ~ .navbar__links
+    .navbar__link-item
+    .navbar__submenu-wrap
+    .navbar__submenu-item {
+    font-size: 2.5rem;
+  }
+  #hamburger:checked
+    ~ .navbar__links
+    .navbar__link-item
+    .navbar__submenu-wrap
+    .navbar__submenu-item
+    .btn__text {
+    background-color: transparent;
+  }
+  #hamburger:checked
+    ~ .navbar__links
+    .navbar__link-item
+    .navbar__link-btn
+    .btn__text {
+    background-color: transparent;
+  }
+
+  #hamburger:checked
+    ~ .navbar__links
+    .navbar__link-item
+    .navbar__link-btn
+    .btn__text::after {
+    background-color: var(--accent-white);
+  }
+  /* cambiar color de los elementos del navbar */
+  #hamburger:checked ~ .navbar__hamburger,
+  #hamburger:checked + .navbar__logo span {
+    color: var(--accent-white);
+  }
+  /* tablet brackpoint*/
+  @media screen and (max-width: 800px) {
+    .navbar {
+      position: -webkit-sticky; /* Para Safari */
+      position: sticky;
+      top: 0; /* Pegado en la parte superior */
+    }
+  }
+  /* mobile brackpoint*/
+  @media screen and (max-width: 600px) {
+    .navbar__links {
+      display: none;
+    }
+    .navbar__hamburger {
+      display: block;
+      position: relative;
+    }
+    .navbar__logo {
+      position: relative;
+      z-index: 3;
+    }
+
+    /* submenu*/
+    .navbar__link-item {
+      max-width: none;
+    }
+    .navbar__submenu-wrap {
+      width: 80%;
+    }
+  }
+</style>

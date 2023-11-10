@@ -1,0 +1,60 @@
+/* Texts */
+.title {
+  font-size: clamp(2.2rem, 2vw, 3rem);
+  font-weight: bold;
+}
+.subtitle {
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+}
+
+.title,
+.subtitle {
+  text-transform: uppercase;
+  font-family: var(--font-secunday);
+  line-height: normal;
+  color: var(--accent-black);
+}
+.title--home {
+  font-size: clamp(1.6rem, 1.8vw, 1.9rem);
+  font-weight: normal;
+  text-align: center;
+}
+
+/* web structure */
+
+.layout-main {
+  display: grid;
+  grid-template-columns: 0.8fr 5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "navbar main ";
+  position: relative;
+}
+.navbar {
+  grid-area: navbar;
+}
+.main {
+  grid-area: main;
+  overflow: auto;
+  height: 100vh;
+  padding-top: 3vh;
+}
+.footer {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 800px) {
+  .layout-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    overflow: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slider-v2__control-item > button > svg path {
+    fill: var(--accent-black);
+  }
+}

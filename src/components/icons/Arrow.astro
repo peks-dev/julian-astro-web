@@ -1,0 +1,46 @@
+---
+interface Props {
+  modifier?: string;
+}
+const { modifier } = Astro.props;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  viewBox="0.00 0.00 234.00 97.00"
+  class={`arrow ${modifier}`}
+>
+  <path
+    d="
+      M 27.84 51.43
+      Q 43.43 67.55 53.28 76.97
+      C 57.52 81.03 52.42 86.20 48.60 82.39
+      Q 32.21 66.04 16.26 50.04
+      A 3.59 3.59 0.0 0 1 16.27 44.97
+      Q 32.38 28.88 48.36 12.86
+      C 52.06 9.14 57.38 13.91 52.86 18.42
+      Q 40.42 30.85 27.80 43.50
+      A 0.21 0.21 0.0 0 0 27.95 43.86
+      Q 119.76 43.83 211.75 43.85
+      C 217.25 43.85 217.00 51.01 212.25 51.01
+      Q 120.14 50.96 28.02 51.01
+      Q 27.43 51.01 27.84 51.43
+      Z"
+  ></path>
+</svg>
+<style is:global>
+  .arrow {
+    max-width: 4rem;
+    color: currentColor;
+  }
+  .arrow path {
+    fill: currentColor;
+  }
+  .arrow--left {
+    transform: rotate(180deg);
+  }
+  .arrow--big {
+    
+  }
+</style>

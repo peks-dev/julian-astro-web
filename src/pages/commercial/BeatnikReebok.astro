@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectLayout from "../../layouts/project-details/ProjectLayout.astro";
+import { projectsData } from "../../context/projectsData";
+---
+
+<Layout
+  title={projectsData[0].name}
+  metaTitle={projectsData[0].name}
+  metaDescription={projectsData[0].description}
+  metaImage={projectsData[0].metaImage}
+>
+  <ProjectLayout
+    projectTitle={projectsData[0].name}
+    projectCategory={projectsData[0].category}
+    projectDetails={projectsData[0].teamMates}
+    images={projectsData[0].images}
+  />
+</Layout>

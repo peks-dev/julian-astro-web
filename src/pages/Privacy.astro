@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="cookies"
+  metaTitle="cookies consent policy"
+  metaDescription="cookies consent policy"
+>
+  <article>
+    <h1 class="title">Cookies Consent</h1>
+    <p>
+      This Cookies Consent Policy explains how we use cookies and other
+      technologies to collect and use your information when you visit our
+      website.
+    </p>
+    <h2 class="subtitle">What are cookies?</h2>
+    <p>
+      Cookies are small text files that are placed on your device by websites
+      you visit. They are used to store information about your visit, such as
+      your language preferences, login information, and items in your shopping
+      cart. This information can be used to improve your browsing experience and
+      to personalize the content and ads you see.
+    </p>
+    <h2 class="subtitle">i dont use cookies</h2>
+    <p>
+      This web dont containt cookies, only netlify thirth party cookies because
+      is my web host provider, so this service ( bussines) can track some data,
+      not personal, just only about the browser and your device
+    </p>
+    <h2 class="subtitle">How can you control cookies?</h2>
+    <p>
+      You can control which cookies are placed on your device by changing your
+      browser settings. Most browsers allow you to block all cookies, or to
+      block only certain types of cookies. However, blocking cookies may affect
+      your ability to use all of the features of our website.
+    </p>
+    <h2 class="subtitle">Consent</h2>
+    <p>
+      By using my website, you consent to the use of cookies as described in
+      this Cookies and Privacy Consent Policy.
+    </p>
+    <h2 class="subtitle">Updates to this policy</h2>
+    <p>
+      i may update this Cookies and Privacy Consent Policy from time to time. If
+      i make any significant changes, we will post a notice on my website.
+    </p>
+    <h2 class="subtitle">Contact me</h2>
+    <p>
+      If you have any questions about this Cookies and Privacy Consent Policy,
+      please contact me at julianlbass@gmail.com.
+    </p>
+  </article>
+</Layout>
+
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+  }
+  p {
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
+    line-height: 1.8rem;
+  }
+
+  @media (max-width: 800px) {
+    article {
+      margin: 0 auto;
+    }
+  }
+</style>

@@ -1,0 +1,23 @@
+---
+interface Props {
+  text: string;
+  url?: string;
+  id?: string;
+  modifier?: string;
+}
+const { text, url, id, modifier } = Astro.props;
+---
+
+<button class={`btn ${modifier}`} id={id}>
+  <slot name="left" />
+  {
+    url ? (
+      <a href={url} class="btn__text">
+        {text}
+      </a>
+    ) : (
+      <span class="btn__text">{text}</span>
+    )
+  }
+  <slot name="right" />
+</button>

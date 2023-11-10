@@ -1,51 +1,249 @@
 ---
+import Navbar from "../components/navbar/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+import "../styles/btn.css";
+
 interface Props {
-	title: string;
+  title: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  metaImage?: string;
 }
 
-const { title } = Astro.props;
+const { title, metaDescription, metaTitle, metaImage } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- favicon metas -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- share link metas -->
+    <meta name="author" content="julian collazo bass" />
+    <meta name="description" content={metaDescription} />
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:image" content={metaImage} />
+
+    <title>{title}</title>
+  </head>
+
+  <body class="layout-main">
+    <Navbar />
+    <main class="main">
+      <slot />
+    </main>
+    <Footer />
+    <style is:global>
+      /* Reset css */
+      @charset "UTF-8";
+      /* Aquí definimos las Custom properties */
+      :root {
+        /* colors */
+        --accent-black: #27272f;
+        --accent-white: #eeede9;
+        /* Tipografía */
+        --font-primary: redigregular, sans-serif;
+        --font-secundary: nitti, sans-serif;
+        font-size: 10px;
+      }
+      @font-face {
+        font-family: "redigregular";
+        src:
+          url("/fonts/redig-regular-webfont.woff2") format("woff2"),
+          url("/fonts/redig-regular-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "nitti";
+        src:
+          url("/fonts/nitti-400-webfont.woff2") format("woff2"),
+          url("/fonts/nitti-400-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* Las adaptamos al modo oscuro */
+      /* @media (prefers-color-scheme: dark) {
+        :root {
+          --accent-black: #eeede9;
+          --accent-white: #27272f;
+        }
+        .slider-v2__header {
+          color: var(--accent-black) !important;
+        }
+        .close-btn {
+          color: var(--accent-black) !important;
+        }
+      } */
+
+      /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          -webkit-animation: none !important;
+          animation: none !important;
+          -webkit-transition: none !important;
+          transition: none !important;
+        }
+      }
+      /* Reseteamos los margin y paddings de todas las etiquetas */
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        vertical-align: baseline;
+      }
+
+      /* Evitamos problemas con las imagenes */
+      img,
+      picture,
+      video,
+      iframe,
+      figure {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        /* opcional */
+        -o-object-fit: cover;
+        object-fit: cover;
+        /* opcional */
+        -o-object-position: center center;
+        object-position: center center;
+      }
+
+      /* Reseteamos los enlaces para funcionar como cajas... */
+      a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        font-size: inherit;
+      }
+
+      /* ... excepto los que se encuentran en párrafos */
+      p a {
+        display: inline;
+      }
+
+      /* Quitamos los puntos de los <li> */
+      li {
+        list-style-type: none;
+      }
+
+      /* Configuramos anclas suaves */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Desactivamos estilos por defecto de las principales etiquetas de texto */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span,
+      a,
+      strong,
+      blockquote,
+      i,
+      b,
+      u,
+      em {
+        font-size: 1em;
+        font-weight: inherit;
+        font-style: inherit;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Evitamos problemas con los pseudoelementos de quotes */
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+
+      /* Configuramos el texto que seleccionamos */
+      ::-moz-selection {
+        background-color: var(--accent-black);
+        color: var(--accent-white);
+      }
+      ::selection {
+        background-color: var(--accent-black);
+        color: var(--accent-white);
+      }
+
+      /* Nivelamos problemas de tipografías y colocación de formularios */
+      form,
+      input,
+      textarea,
+      select,
+      button,
+      label {
+        font-family: inherit;
+        font-size: inherit;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        background-color: transparent;
+        color: inherit;
+        display: block;
+        /* opcional */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      /* Reseteamos las tablas */
+      table,
+      tr,
+      td {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      /* Evitamos problemas con los SVG */
+      svg {
+        width: 100%;
+        display: block;
+        fill: currentColor;
+      }
+
+      /* Configuramos la tipografía para toda la web */
+      body {
+        min-height: 100vh;
+        font-size: 100%;
+        font-family: var(--font-secundary);
+        color: var(--accent-black);
+        background-color: var(--accent-white);
+        /* opcional */
+        line-height: 1.4em;
+        /* opcional */
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        /* opcional */
+        font-smooth: always;
+        /* opcional */
+        -webkit-font-smoothing: antialiased;
+        /* opcional */
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
