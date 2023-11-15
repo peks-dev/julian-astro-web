@@ -4,7 +4,7 @@ export const projectsData = [
     description: "julian collazo bass project",
     category: "short film",
     url: "/commercial/BeatnikReebok",
-    coverPath: "/projects/commercial/beatnik-reebok/beatnik_reebok_1.webp",
+    coverPath: "/projects/commercial/beatnik-reebok/beatnik_reebok_7.webp",
     metaImage: "/projects/commercial/beatnik-reebok/beatnik_reebok_meta.jpg",
     images: [
       {
@@ -47,28 +47,32 @@ export const projectsData = [
     description: "julian collazo bass project",
     category: "short film",
     url: "/commercial/ModPizza",
-    coverPath: "/projects/commercial/mod-pizza/mod_pizza_1.webp",
+    coverPath: "/projects/commercial/mod-pizza/mod_pizza_4.webp",
     metaImage: "/projects/commercial/mod-pizza/mod_pizza_meta.jpg",
     images: [
       {
-        src: "/projects/commercial/mod-pizza/mod_pizza_1.webp",
-        alt: "mod pizza image 1",
-      },
-      {
-        src: "/projects/commercial/mod-pizza/mod_pizza_2.webp",
-        alt: "mod pizza image 2",
+        src: "/projects/commercial/mod-pizza/mod_pizza_6.webp",
+        alt: "mod pizza image 6",
       },
       {
         src: "/projects/commercial/mod-pizza/mod_pizza_3.webp",
         alt: "mod pizza image 3",
       },
       {
+        src: "/projects/commercial/mod-pizza/mod_pizza_7.webp",
+        alt: "mod pizza image 7",
+      },
+      {
+        src: "/projects/commercial/mod-pizza/mod_pizza_1.webp",
+        alt: "mod pizza image 1",
+      },
+      {
         src: "/projects/commercial/mod-pizza/mod_pizza_5.webp",
         alt: "mod pizza image 5",
       },
       {
-        src: "/projects/commercial/mod-pizza/mod_pizza_6.webp",
-        alt: "mod pizza image 6",
+        src: "/projects/commercial/mod-pizza/mod_pizza_2.webp",
+        alt: "mod pizza image 2",
       },
     ],
     teamMates: {
