@@ -51,6 +51,10 @@ export const projectsData = [
     metaImage: "/projects/commercial/mod-pizza/mod_pizza_meta.jpg",
     images: [
       {
+        src: "/projects/commercial/mod-pizza/mod_pizza_4.webp",
+        alt: "mod pizza image 4",
+      },
+      {
         src: "/projects/commercial/mod-pizza/mod_pizza_6.webp",
         alt: "mod pizza image 6",
       },
