@@ -28,9 +28,21 @@ const { projectTitle, images, projectCategory, projectDetails } = Astro.props;
   <Slider images={images} />
   <footer class="project__details">
     <p>
-      <span>dir / {projectDetails.dir}</span><span
-        >prod / {projectDetails.prod}</span
-      ><span>writt / {projectDetails.writt}</span>
+      {
+        projectDetails.dir !== undefined && (
+          <span>dir / {projectDetails.dir}</span>
+        )
+      }
+      {
+        projectDetails.prod !== undefined && (
+          <span>prod / {projectDetails.prod}</span>
+        )
+      }
+      {
+        projectDetails.writt !== undefined && (
+          <span>writt / {projectDetails.writt}</span>
+        )
+      }
     </p>
   </footer>
 </article>

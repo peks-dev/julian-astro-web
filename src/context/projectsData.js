@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    name: "beatnik reebok",
+    name: "beatnik reebok for woman",
     description: "julian collazo bass project",
     category: "short film",
     url: "/commercial/BeatnikReebok",
@@ -38,6 +38,50 @@ export const projectsData = [
     ],
     teamMates: {
       dir: "gaku inadu",
+      prod: undefined,
+      writt: undefined,
+    },
+  },
+  {
+    name: "beatnik reebok for men",
+    description: "julian collazo bass project",
+    category: "short film",
+    url: "/commercial/BeatnikReebok",
+    coverPath: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_4.jpeg",
+    metaImage:
+      "/projects/commercial/beatnik-reebok-men/beatnik_for_men_meta.jpeg",
+    images: [
+      {
+        src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_1.jpeg",
+        alt: "beatnik reebok image 1",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_2.jpeg",
+        alt: "beatnik reebok image 2",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_3.jpeg",
+        alt: "beatnik reebok image 3",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_4.jpeg",
+        alt: "beatnik reebok image 4",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_5.jpeg",
+        alt: "beatnik reebok image 5",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_6.jpeg",
+        alt: "beatnik reebok image 6",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_7.jpeg",
+        alt: "beatnik reebok image 7",
+      },
+    ],
+    teamMates: {
+      dir: "person dir",
       prod: "person prod",
       writt: "person writt",
     },
@@ -80,9 +124,9 @@ export const projectsData = [
       },
     ],
     teamMates: {
-      dir: "person dir",
-      prod: "person prod",
-      writt: "person writt",
+      dir: undefined,
+      prod: undefined,
+      writt: undefined,
     },
   },
   {
@@ -124,7 +168,7 @@ export const projectsData = [
     ],
     teamMates: {
       dir: "benjamin shweky",
-      prod: "person prod",
+      prod: undefined,
       writt: "benjamin shweky",
     },
   },
@@ -167,7 +211,7 @@ export const projectsData = [
     ],
     teamMates: {
       dir: "sara gross",
-      prod: "person prod",
+      prod: undefined,
       writt: "sara gross",
     },
   },
@@ -189,7 +233,7 @@ export const projectsData = [
     ],
     teamMates: {
       dir: "julian collazo bass",
-      prod: "person prod",
+      prod: undefined,
       writt: "maureen shepard",
     },
   },
@@ -208,7 +252,7 @@ export const projectsData = [
     ],
     teamMates: {
       dir: "cedric godin",
-      prod: "person prod",
+      prod: undefined,
       writt: "cedric godin",
     },
   },
