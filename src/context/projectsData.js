@@ -47,7 +47,7 @@ export const projectsData = [
     description: "julian collazo bass project",
     category: "short film",
     url: "/commercial/BeatnikReebok",
-    coverPath: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_4.jpeg",
+    coverPath: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_1.jpeg",
     metaImage:
       "/projects/commercial/beatnik-reebok-men/beatnik_for_men_meta.jpeg",
     images: [
