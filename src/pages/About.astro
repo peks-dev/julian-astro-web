@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Lightbox from "../components/lightbox/Lightbox.astro";
-import Btn from "../components/Btn.astro";
 ---
 
 <Layout
@@ -11,79 +10,84 @@ import Btn from "../components/Btn.astro";
   metaImage="/julian_meta_img.jpg"
 >
   <section class="section">
+    <h1 class="title title--home">- director of photography -</h1>
     <Lightbox />
-    <picture class="about__img image-wrap slider__item">
-      <img
-        src="/julian_collazo_bass.jpg"
-        alt="julian collazo bass with a camera on his hands"
-      />
-    </picture>
-    <div class="parrafo-container">
-      <p>
-        Julian Collazo Bass is a director of photography based in NYC. Born and
-        raised in New York, Julian graduated from the SUNY Purchase Photography
-        and New Media Program and has established himself as a versatile
-        cinematographer in the narrative, commercial, and music video spaces.
-      </p>
-      <p>
-        His recent narrative credits include 2nd Unit Photography on Down Low
-        with director Rightor Doyle, written by and starring Lukas Gage and
-        Zachary Quinto (SXSW Film Festival 2023 premiere) and Which Brings Me to
-        You with writer/director Peter Hutchings, starring Lucy Hale and Nat
-        Wolff.
-      </p>
-      <p>
-        In college he played divisional tennis and basketball and he has lived
-        abroad in Paris, Istanbul and Merida. Julian’s background influences his
-        fresh perspective and global awareness as a cinematographer and he
-        brings the collaborative spirit and tenacity of an athlete to all of his
-        work.
-      </p>
+    <div class="content-container">
+      <picture class="about__img image-wrap slider__item">
+        <img
+          src="/julian_collazo_bass_1.png"
+          alt="julian collazo bass with a camera on his hands"
+        />
+      </picture>
+      <div class="text-container">
+        <p>
+          Julian Collazo Bass is a director of photography based in NYC. Born
+          and raised in New York, Julian graduated from the SUNY Purchase
+          Photography and New Media Program and has established himself as a
+          versatile cinematographer in the narrative, commercial, and music
+          video spaces.
+        </p>
+        <p>
+          His recent narrative credits include 2nd Unit Photography on Down Low
+          with director Rightor Doyle, written by and starring Lukas Gage and
+          Zachary Quinto (SXSW Film Festival 2023 premiere) and Which Brings Me
+          to You with writer director Peter Hutchings, starring Lucy Hale and
+          Nat Wolff.
+        </p>
+        <p>
+          In college he played divisional tennis and basketball and he has lived
+          abroad in Paris, Istanbul and Merida. Julian’s background influences
+          his fresh perspective and global awareness as a cinematographer and he
+          brings the collaborative spirit and tenacity of an athlete to all of
+          his work.
+        </p>
+      </div>
     </div>
   </section>
 </Layout>
 
 <style>
+  h1 {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
   .section {
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
-    padding-bottom: 5rem;
     width: 90%;
   }
-
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.5rem;
+    border: 0.5rem solid var(--accent-black);
+  }
   .about__img {
-    flex: 1 0 50%;
+    flex: 1 0 min(100%, 35rem);
     cursor: pointer;
+    height: 100%;
   }
   .about__img img {
     width: 100%;
     object-fit: cover;
   }
-  .parrafo-container {
-    flex: 2 1 50%;
+  .text-container {
+    flex: 1 0 min(100%, 35rem);
     display: flex;
     flex-direction: column;
-    align-self: center;
-    gap: 1.8rem;
+    gap: 2rem;
   }
-  .parrafo-container p {
+  p {
     font-size: clamp(1.3rem, 3vw, 1.5rem);
-    flex-grow: 1;
     line-height: 1.8rem;
-    width: 100%;
   }
   @media (max-width: 800px) {
-    .about__img {
+    .section {
       margin: 0 auto;
     }
-    .section {
-      padding-bottom: 15vh;
-      flex-direction: column;
-      width: 100%;
-    }
-    .parrafo-container {
+    p {
       width: 90%;
+      margin: 0 auto;
     }
   }
 </style>

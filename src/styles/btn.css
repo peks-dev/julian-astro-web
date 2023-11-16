@@ -5,6 +5,7 @@
   gap: 0.5rem;
   color: var(--accent-black);
   align-items: center;
+  cursor: pointer;
 }
 
 .btn__text {
@@ -12,9 +13,11 @@
   text-transform: uppercase;
   align-self: center;
   line-height: normal;
+  cursor: pointer;
 }
 .btn__number {
   align-self: self-start;
+  cursor: pointer;
 }
 
 /* down line */
