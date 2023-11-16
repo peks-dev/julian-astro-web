@@ -37,7 +37,7 @@ export const projectsData = [
       },
     ],
     teamMates: {
-      dir: "person dir",
+      dir: "gaku inadu",
       prod: "person prod",
       writt: "person writt",
     },
@@ -123,9 +123,9 @@ export const projectsData = [
       },
     ],
     teamMates: {
-      dir: "person dir",
+      dir: "benjamin shweky",
       prod: "person prod",
-      writt: "person writt",
+      writt: "benjamin shweky",
     },
   },
   {
@@ -166,9 +166,9 @@ export const projectsData = [
       },
     ],
     teamMates: {
-      dir: "person dir",
+      dir: "sara gross",
       prod: "person prod",
-      writt: "person writt",
+      writt: "sara gross",
     },
   },
   {
@@ -188,9 +188,9 @@ export const projectsData = [
       { src: "/projects/narrative/lily/lily_6.jpeg", alt: "lily image 6" },
     ],
     teamMates: {
-      dir: "person dir",
+      dir: "julian collazo bass",
       prod: "person prod",
-      writt: "person writt",
+      writt: "maureen shepard",
     },
   },
   {
@@ -207,9 +207,9 @@ export const projectsData = [
       { src: "/projects/narrative/ptsd/ptsd_3.jpeg", alt: "ptsd image 3" },
     ],
     teamMates: {
-      dir: "person dir",
+      dir: "cedric godin",
       prod: "person prod",
-      writt: "person writt",
+      writt: "cedric godin",
     },
   },
 ];
