@@ -3,7 +3,7 @@ export const projectsData = [
     name: "beatnik reebok for woman",
     description: "julian collazo bass project",
     category: "short film",
-    url: "/commercial/BeatnikReebok",
+    url: "/commercial/BeatnikReebokWoman",
     coverPath: "/projects/commercial/beatnik-reebok/beatnik_reebok_7.jpeg",
     metaImage: "/projects/commercial/beatnik-reebok/beatnik_reebok_meta.jpg",
     images: [
@@ -46,7 +46,7 @@ export const projectsData = [
     name: "beatnik reebok for men",
     description: "julian collazo bass project",
     category: "short film",
-    url: "/commercial/BeatnikReebok",
+    url: "/commercial/BeatnikReebokMen",
     coverPath: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_1.jpeg",
     metaImage:
       "/projects/commercial/beatnik-reebok-men/beatnik_for_men_meta.jpeg",
@@ -254,6 +254,49 @@ export const projectsData = [
       dir: "cedric godin",
       prod: undefined,
       writt: "cedric godin",
+    },
+  },
+  {
+    name: "swingnight",
+    description: "julian collazo bass project",
+    category: "short film",
+    url: "/narrative/Swingnight",
+    coverPath: "/projects/narrative/swingnight/swingnight_5.jpeg",
+    metaImage: "projects/narrative/swingnight/swingnight_meta.jpg",
+    images: [
+      {
+        src: "/projects/narrative/swingnight/swingnight_5.jpeg",
+        alt: "swingnight image 5",
+      },
+      {
+        src: "/projects/narrative/swingnight/swingnight_1.jpeg",
+        alt: "swingnight image 1",
+      },
+      {
+        src: "/projects/narrative/swingnight/swingnight_2.jpeg",
+        alt: "swingnight image 2",
+      },
+      {
+        src: "/projects/narrative/swingnight/swingnight_3.jpeg",
+        alt: "swingnight image 3",
+      },
+      {
+        src: "/projects/narrative/swingnight/swingnight_4.jpeg",
+        alt: "swingnight image 4",
+      },
+      {
+        src: "/projects/narrative/swingnight/swingnight_6.jpeg",
+        alt: "swingnight image 6",
+      },
+      {
+        src: "/projects/narrative/swingnight/swingnight_7.jpeg",
+        alt: "swingnight image 7",
+      },
+    ],
+    teamMates: {
+      dir: undefined,
+      prod: undefined,
+      writt: undefined,
     },
   },
 ];
