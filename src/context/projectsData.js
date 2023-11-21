@@ -81,9 +81,9 @@ export const projectsData = [
       },
     ],
     teamMates: {
-      dir: "person dir",
-      prod: "person prod",
-      writt: "person writt",
+      dir: undefined,
+      prod: undefined,
+      writt: undefined,
     },
   },
   {

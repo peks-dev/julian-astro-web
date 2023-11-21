@@ -66,4 +66,7 @@
   .slider-v2 .btn {
     color: var(--accent-black);
   }
+  .btn > svg {
+    display: none;
+  }
 }

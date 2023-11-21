@@ -115,6 +115,12 @@ const { projectTitle, images, projectCategory, projectDetails } = Astro.props;
       margin-bottom: 2rem;
     }
   }
+  @media (max-width: 600px) {
+    .project__header {
+      align-self: center;
+      gap: 1.5rem;
+    }
+  }
 
   /* Animaciones */
   @keyframes fade-in {

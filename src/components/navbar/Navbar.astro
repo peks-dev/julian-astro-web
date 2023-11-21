@@ -226,9 +226,23 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--accent-black);
+    /* background-color: var(--accent-black); */
     color: var(--accent-white);
     flex-grow: 2;
+    animation: open-menu 0.5s ease-in forwards;
+  }
+  #hamburger .navbar__links {
+    animation: open-menu 0.5s ease-in-out reverse forwards;
+  }
+  @keyframes open-menu {
+    from {
+      background-color: transparent;
+      transform: translateY(-1000px);
+    }
+    to {
+      background-color: var(--accent-black);
+      transform: translateY(0);
+    }
   }
   #hamburger:checked ~ .navbar__links > .navbar__links-wrap {
     width: 70%;
