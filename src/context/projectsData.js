@@ -91,35 +91,35 @@ export const projectsData = [
     description: "julian collazo bass project",
     category: "commercial",
     url: "/commercial/ModPizza",
-    coverPath: "/projects/commercial/mod-pizza/mod_pizza_4.jpeg",
+    coverPath: "/projects/commercial/mod-pizza/mod_pizza_4.webp",
     metaImage: "/projects/commercial/mod-pizza/mod_pizza_meta.jpg",
     images: [
       {
-        src: "/projects/commercial/mod-pizza/mod_pizza_4.jpeg",
+        src: "/projects/commercial/mod-pizza/mod_pizza_4.webp",
         alt: "mod pizza image 4",
       },
       {
-        src: "/projects/commercial/mod-pizza/mod_pizza_6.jpeg",
+        src: "/projects/commercial/mod-pizza/mod_pizza_6.webp",
         alt: "mod pizza image 6",
       },
       {
-        src: "/projects/commercial/mod-pizza/mod_pizza_3.jpeg",
+        src: "/projects/commercial/mod-pizza/mod_pizza_3.webp",
         alt: "mod pizza image 3",
       },
       {
-        src: "/projects/commercial/mod-pizza/mod_pizza_7.jpeg",
+        src: "/projects/commercial/mod-pizza/mod_pizza_7.webp",
         alt: "mod pizza image 7",
       },
       {
-        src: "/projects/commercial/mod-pizza/mod_pizza_1.jpeg",
+        src: "/projects/commercial/mod-pizza/mod_pizza_1.webp",
         alt: "mod pizza image 1",
       },
       {
-        src: "/projects/commercial/mod-pizza/mod_pizza_5.jpeg",
+        src: "/projects/commercial/mod-pizza/mod_pizza_5.webp",
         alt: "mod pizza image 5",
       },
       {
-        src: "/projects/commercial/mod-pizza/mod_pizza_2.jpeg",
+        src: "/projects/commercial/mod-pizza/mod_pizza_2.webp",
         alt: "mod pizza image 2",
       },
     ],

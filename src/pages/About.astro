@@ -59,7 +59,6 @@ import Lightbox from "../components/lightbox/Lightbox.astro";
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 2.5rem;
     border: 0.5rem solid var(--accent-black);
   }
   .about__img {
@@ -75,7 +74,9 @@ import Lightbox from "../components/lightbox/Lightbox.astro";
     flex: 1 0 min(100%, 35rem);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
+    padding: 2.5rem;
   }
   p {
     width: 95%;
@@ -89,6 +90,9 @@ import Lightbox from "../components/lightbox/Lightbox.astro";
     p {
       width: 90%;
       margin: 0 auto;
+    }
+    .content-container {
+      margin-bottom: 20%;
     }
   }
 </style>
