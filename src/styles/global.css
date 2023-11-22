@@ -12,7 +12,7 @@
   text-transform: uppercase;
   font-family: var(--font-secunday);
   line-height: normal;
-  color: var(--accent-black);
+  color: currentColor;
 }
 .title--home {
   font-size: clamp(1.6rem, 1.8vw, 1.9rem);

@@ -1,0 +1,104 @@
+---
+import { projectsData } from "../../context/projectsData";
+import Btn from "../Btn.astro";
+import Arrow from "../icons/Arrow.astro";
+---
+
+<div class="slider">
+  <ul class="slider__items-container">
+    {
+      projectsData.map((project, index) => (
+        <li class="slider__item">
+          <a href={project.url}>
+            <img src={project.coverPath} alt="imagen del projecto" />
+          </a>
+          <header class="slider__content">
+            <p class="subtitle">{project.category}</p>
+            <h2 class="title">{project.name}</h2>
+          </header>
+        </li>
+      ))
+    }
+  </ul>
+  <ul class="slider__buttons-wrap">
+    <li><Btn text="prev" id="prev"><Arrow slot="left" /></Btn></li>
+    <li>
+      <Btn text="next" id="next">
+        <Arrow slot="right" modifier="arrow--left" />
+      </Btn>
+    </li>
+  </ul>
+</div>
+
+<script src="./sliderTest.js"></script>
+
+<!-- divider -->
+
+<style>
+  .slider {
+    width: 100%;
+    position: relative;
+  }
+  .slider__items-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    transition: all;
+  }
+  .slider__item {
+    min-width: 100%;
+    height: 100%;
+  }
+  .slider__item a {
+    border: 0.8rem solid var(--accent-black);
+  }
+
+  .slider__content {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    color: var(--accent-white);
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  .slider__content::before {
+    content: "";
+    display: inline-block;
+    width: 7rem;
+    height: 0.3rem;
+    background-color: currentColor;
+  }
+  .slider__item--active .slider__content {
+    display: flex;
+    opacity: 1;
+  }
+
+  .slider__buttons-wrap {
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    width: min(25rem, 90%);
+    z-index: 2;
+    color: var(--accent-white);
+  }
+  @media (max-width: 600px) {
+    .slider__content,
+    .slider__buttons-wrap {
+      position: static;
+      color: var(--accent-black);
+      width: 85%;
+      margin: 1rem auto;
+    }
+    .slider__buttons-wrap {
+      justify-content: flex-start;
+    }
+  }
+</style>

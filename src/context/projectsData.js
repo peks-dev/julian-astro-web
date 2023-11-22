@@ -2,7 +2,7 @@ export const projectsData = [
   {
     name: "beatnik reebok for woman",
     description: "julian collazo bass project",
-    category: "short film",
+    category: "commercial",
     url: "/commercial/BeatnikReebokWoman",
     coverPath: "/projects/commercial/beatnik-reebok/beatnik_reebok_7.jpeg",
     metaImage: "/projects/commercial/beatnik-reebok/beatnik_reebok_meta.jpg",
@@ -45,7 +45,7 @@ export const projectsData = [
   {
     name: "beatnik reebok for men",
     description: "julian collazo bass project",
-    category: "short film",
+    category: "commercial",
     url: "/commercial/BeatnikReebokMen",
     coverPath: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_1.jpeg",
     metaImage:
@@ -89,7 +89,7 @@ export const projectsData = [
   {
     name: "mod pizza",
     description: "julian collazo bass project",
-    category: "short film",
+    category: "commercial",
     url: "/commercial/ModPizza",
     coverPath: "/projects/commercial/mod-pizza/mod_pizza_4.jpeg",
     metaImage: "/projects/commercial/mod-pizza/mod_pizza_meta.jpg",
@@ -132,7 +132,7 @@ export const projectsData = [
   {
     name: "chocolate cake",
     description: "julian collazo bass project",
-    category: "short film",
+    category: "narrative",
     url: "/narrative/ChocolateCake",
     coverPath: "/projects/narrative/chocolate-cake/chocolate_cake_1.png",
     metaImage: "/projects/narrative/chocolate-cake/chocolate_cake_meta.jpg",
@@ -175,7 +175,7 @@ export const projectsData = [
   {
     name: "face values",
     description: "julian collazo bass project",
-    category: "short film",
+    category: "narrative",
     url: "/narrative/FaceValues",
     coverPath: "/projects/narrative/face-values/face_value_1.jpeg",
     metaImage: "/projects/narrative/face-values/face_value_meta.jpg",
@@ -218,7 +218,7 @@ export const projectsData = [
   {
     name: "lily",
     description: "julian collazo bass project",
-    category: "short film",
+    category: "narrative",
     url: "/narrative/Lily",
     coverPath: "/projects/narrative/lily/lily_7.jpeg",
     metaImage: "/projects/narrative/lily/lily_meta.jpg",
@@ -240,7 +240,7 @@ export const projectsData = [
   {
     name: "ptsd",
     description: "julian collazo bass project",
-    category: "short film",
+    category: "narrative",
     url: "/narrative/Ptsd",
     coverPath: "/projects/narrative/ptsd/ptsd_4.png",
     metaImage: "projects/narrative/ptsd/ptsd_meta.jpg",
@@ -259,7 +259,7 @@ export const projectsData = [
   {
     name: "swingnight",
     description: "julian collazo bass project",
-    category: "short film",
+    category: "narrative",
     url: "/narrative/Swingnight",
     coverPath: "/projects/narrative/swingnight/swingnight_5.jpeg",
     metaImage: "projects/narrative/swingnight/swingnight_meta.jpg",
