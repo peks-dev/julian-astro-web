@@ -3,7 +3,7 @@
   white-space: nowrap;
   display: flex;
   gap: 0.5rem;
-  color: currentColor;
+  color: currentColors;
   align-items: center;
   cursor: pointer;
 }

@@ -81,7 +81,7 @@ export const projectsData = [
       },
     ],
     teamMates: {
-      dir: undefined,
+      dir: "gaku inadu",
       prod: undefined,
       writt: undefined,
     },
@@ -124,8 +124,8 @@ export const projectsData = [
       },
     ],
     teamMates: {
-      dir: undefined,
-      prod: undefined,
+      dir: "aaron & alex Craig",
+      prod: "we are films",
       writt: undefined,
     },
   },
@@ -294,9 +294,9 @@ export const projectsData = [
       },
     ],
     teamMates: {
-      dir: undefined,
+      dir: "julian collazo bass",
       prod: undefined,
-      writt: undefined,
+      writt: "lindsay perry",
     },
   },
 ];
