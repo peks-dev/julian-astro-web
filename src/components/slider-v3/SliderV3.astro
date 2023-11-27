@@ -2,7 +2,6 @@
 import Btn from "../Btn.astro";
 import Arrow from "../icons/Arrow.astro";
 import { projectsData } from "../../context/projectsData";
-import { Image } from "astro:assets";
 ---
 
 <section>
@@ -12,13 +11,7 @@ import { Image } from "astro:assets";
         projectsData.map((project) => (
           <li class="slider__item">
             <a href={project.url} class="slider__image">
-              <Image
-                src={project.coverPath}
-                alt={project.images[0].alt}
-                width={2000}
-                height={1200}
-                loading="eager"
-              />
+              <img src={project.coverPath} alt={project.images[0].alt} />
             </a>
             <header class="slider__header">
               <h2 class="title">{project.name}</h2>
