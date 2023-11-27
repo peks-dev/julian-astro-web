@@ -248,13 +248,13 @@ export const projectsData = [
     description: "julian collazo bass project",
     category: "narrative",
     url: "/narrative/Ptsd",
-    coverPath: "/projects/narrative/ptsd/ptsd_4.png",
+    coverPath: "/projects/narrative/ptsd/ptsd_4.webp",
     metaImage: "projects/narrative/ptsd/ptsd_meta.jpg",
     images: [
-      { src: "/projects/narrative/ptsd/ptsd_4.png", alt: "ptsd image 4" },
-      { src: "/projects/narrative/ptsd/ptsd_2.jpeg", alt: "ptsd image 2" },
-      { src: "/projects/narrative/ptsd/ptsd_1.jpeg", alt: "ptsd image 1" },
-      { src: "/projects/narrative/ptsd/ptsd_3.jpeg", alt: "ptsd image 3" },
+      { src: "/projects/narrative/ptsd/ptsd_4.webp", alt: "ptsd image 4" },
+      { src: "/projects/narrative/ptsd/ptsd_2.webp", alt: "ptsd image 2" },
+      { src: "/projects/narrative/ptsd/ptsd_1.webp", alt: "ptsd image 1" },
+      { src: "/projects/narrative/ptsd/ptsd_3.webp", alt: "ptsd image 3" },
     ],
     teamMates: {
       dir: "cedric godin",

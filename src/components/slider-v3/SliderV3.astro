@@ -13,7 +13,7 @@ console.log("hola que pedo");
         projectsData.map((project) => (
           <li class="slider__item">
             <a href={project.url} class="slider__image">
-              <img src={project.coverPath} alt={project.description} />
+              <img src={project.coverPath} alt={project.images[0].alt} />
             </a>
             <header class="slider__header">
               <h2 class="title">{project.name}</h2>
