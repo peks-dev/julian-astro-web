@@ -4,42 +4,35 @@ export const projectsData = [
     description: "julian collazo bass project",
     category: "commercial",
     url: "/commercial/BeatnikReebokWoman",
-    coverPath: "/projects/commercial/beatnik-reebok/beatnik_reebok_7.webp",
+    coverPath: "/projects/commercial/beatnik-reebok/beatnik_reebok_1.webp",
     metaImage: "/projects/commercial/beatnik-reebok/beatnik_reebok_meta.jpg",
     images: [
       {
-        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_7.webp",
-        alt: "beatnik reebok image 7",
-      },
-      {
         src: "/projects/commercial/beatnik-reebok/beatnik_reebok_1.webp",
         alt: "beatnik reebok image 1",
-      },
-      {
-        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_3.webp",
-        alt: "beatnik reebok image 3",
       },
       {
         src: "/projects/commercial/beatnik-reebok/beatnik_reebok_2.webp",
         alt: "beatnik reebok image 2",
       },
       {
-        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_5.webp",
-        alt: "beatnik reebok image 5",
-      },
-      {
-        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_6.webp",
-        alt: "beatnik reebok image 6",
+        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_3.webp",
+        alt: "beatnik reebok image 3",
       },
       {
         src: "/projects/commercial/beatnik-reebok/beatnik_reebok_4.webp",
         alt: "beatnik reebok image 4",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_5.webp",
+        alt: "beatnik reebok image 5",
       },
     ],
     teamMates: {
       dir: "gaku inadu",
       prod: undefined,
       writt: undefined,
+      client: "nepenthes",
     },
   },
   {
@@ -79,11 +72,20 @@ export const projectsData = [
         src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_7.webp",
         alt: "beatnik reebok image 7",
       },
+      {
+        src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_8.webp",
+        alt: "beatnik reebok image 8",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok-men/beatnik_for_men_9.webp",
+        alt: "beatnik reebok image 9",
+      },
     ],
     teamMates: {
       dir: "gaku inadu",
       prod: undefined,
       writt: undefined,
+      client: "nepenthes",
     },
   },
   {
@@ -127,6 +129,7 @@ export const projectsData = [
       dir: "aaron & alex Craig",
       prod: "we are films",
       writt: undefined,
+      client: undefined,
     },
   },
   {
@@ -170,6 +173,7 @@ export const projectsData = [
       dir: "benjamin shweky",
       prod: undefined,
       writt: "benjamin shweky",
+      client: undefined,
     },
   },
   {
@@ -213,6 +217,7 @@ export const projectsData = [
       dir: "sara gross",
       prod: undefined,
       writt: "sara gross",
+      client: undefined,
     },
   },
   {
@@ -235,6 +240,7 @@ export const projectsData = [
       dir: "julian collazo bass",
       prod: undefined,
       writt: "maureen shepard",
+      client: undefined,
     },
   },
   {
@@ -254,6 +260,7 @@ export const projectsData = [
       dir: "cedric godin",
       prod: undefined,
       writt: "cedric godin",
+      client: undefined,
     },
   },
   {
@@ -297,6 +304,7 @@ export const projectsData = [
       dir: "julian collazo bass",
       prod: undefined,
       writt: "lindsay perry",
+      client: undefined,
     },
   },
 ];

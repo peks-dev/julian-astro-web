@@ -1,0 +1,176 @@
+---
+import Btn from "../Btn.astro";
+import Arrow from "../icons/Arrow.astro";
+import { projectsData } from "../../context/projectsData";
+
+console.log("hola que pedo");
+---
+
+<section>
+  <div class="slider">
+    <ul class="slider__wrap">
+      {
+        projectsData.map((project) => (
+          <li class="slider__item">
+            <a href={project.url} class="slider__image">
+              <img src={project.coverPath} alt={project.description} />
+            </a>
+            <header class="slider__header">
+              <h2 class="title">{project.name}</h2>
+              <p class="subtitle">{project.category}</p>
+            </header>
+          </li>
+        ))
+      }
+    </ul>
+    <nav class="slider__controls">
+      <Btn modifier="btn--slide-up" text="prev" id="prev">
+        <Arrow slot="left" />
+      </Btn>
+      <Btn modifier="btn--slide-up" text="next" id="next">
+        <Arrow modifier="arrow--left" slot="right" />
+      </Btn>
+    </nav>
+  </div>
+</section>
+
+<script src="./sliderV3.js"></script>
+
+<style>
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    border: 8px solid var(--accent-black);
+    color: var(--accent-white);
+  }
+  .slider__wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .slider__item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: visibility 0.7s;
+    transition-delay: 0.7s;
+  }
+  .slider-active {
+    visibility: visible;
+    transition-delay: 0s;
+  }
+  .slider__image {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.7s ease-in,
+      visibility 0.7s ease-in;
+  }
+  .slider-active .slider__image {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .slider__image img {
+    height: 100%;
+  }
+  .slider__header {
+    width: min(50rem, 80%);
+    padding-top: 1.5rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 1.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    overflow: hidden;
+  }
+  .slider__header::before {
+    content: "";
+    height: 0.3rem;
+    width: 8rem;
+    background-color: currentColor;
+    order: 1;
+    transform: translateY(-50px);
+    transition: transform 0.6s ease-out;
+    transition-delay: 0;
+  }
+  .slider-active .slider__header::before {
+    transform: translateY(0);
+    transition-delay: 0.5s;
+  }
+  .slider__header h2 {
+    transform: translateX(-800px);
+    transition: transform 0.6s ease-in-out;
+    transition-delay: 0s;
+  }
+  .slider-active .slider__header h2 {
+    transform: translateX(0);
+    transition-delay: 0.9s;
+  }
+
+  .slider__header p {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 0s;
+  }
+  .slider-active .slider__header p {
+    opacity: 1;
+    transition-delay: 0.9s;
+  }
+
+  .slider__controls {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    overflow: hidden;
+  }
+
+  /* tablet*/
+  @media (max-width: 800px) {
+    .slider {
+      max-height: 550px;
+      width: 100%;
+    }
+  }
+
+  /* mobile*/
+  @media (max-width: 600px) {
+    .slider {
+      /* max-height: 60rem; */
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--accent-black);
+    }
+    .slider__wrap {
+      height: 30rem;
+      border: 8px solid var(--accent-black);
+    }
+    .slider__header {
+      bottom: -10rem;
+    }
+    .slider__controls {
+      position: relative;
+      bottom: 10rem;
+      left: 0;
+      width: 80%;
+      justify-content: center;
+      gap: 4rem;
+    }
+  }
+</style>

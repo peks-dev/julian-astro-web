@@ -12,7 +12,7 @@ interface Props {
   projectTitle: string;
   projectCategory: string;
   images: ImagesArrayItem[];
-  projectDetails: { dir: string; prod: string; writt: string };
+  projectDetails: { dir: string; prod: string; writt: string; client: string };
 }
 
 const { projectTitle, images, projectCategory, projectDetails } = Astro.props;
@@ -41,6 +41,11 @@ const { projectTitle, images, projectCategory, projectDetails } = Astro.props;
       {
         projectDetails.writt !== undefined && (
           <span>writt / {projectDetails.writt}</span>
+        )
+      }
+      {
+        projectDetails.client !== undefined && (
+          <span>client / {projectDetails.client}</span>
         )
       }
     </p>

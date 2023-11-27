@@ -3,11 +3,14 @@
   white-space: nowrap;
   display: flex;
   gap: 0.5rem;
-  color: currentColors;
+  color: currentColor;
   align-items: center;
   cursor: pointer;
 }
-
+/* animation */
+.btn--slide-up {
+  animation: slide-up 0.5s ease-in-out 1.2s both;
+}
 .btn__text {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -68,5 +71,13 @@
   }
   .btn > svg {
     display: none;
+  }
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
