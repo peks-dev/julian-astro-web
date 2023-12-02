@@ -12,6 +12,10 @@ export const projectsData = [
         alt: "beatnik reebok image 1",
       },
       {
+        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_10.webp",
+        alt: "beatnik reebok image 10",
+      },
+      {
         src: "/projects/commercial/beatnik-reebok/beatnik_reebok_2.webp",
         alt: "beatnik reebok image 2",
       },
@@ -26,6 +30,22 @@ export const projectsData = [
       {
         src: "/projects/commercial/beatnik-reebok/beatnik_reebok_5.webp",
         alt: "beatnik reebok image 5",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_6.webp",
+        alt: "beatnik reebok image 6",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_7.webp",
+        alt: "beatnik reebok image 7",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_8.webp",
+        alt: "beatnik reebok image 8",
+      },
+      {
+        src: "/projects/commercial/beatnik-reebok/beatnik_reebok_9.webp",
+        alt: "beatnik reebok image 9",
       },
     ],
     teamMates: {
