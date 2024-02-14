@@ -36,7 +36,8 @@ const { title, metaDescription, metaTitle, metaImage } = Astro.props;
 
     <title>{title}</title>
     <ViewTransitions />
-  </head>
+    <script src="../utilities/darkMode.js"></script></head
+  >
 
   <body class="layout-main">
     <Navbar />
@@ -77,7 +78,7 @@ const { title, metaDescription, metaTitle, metaImage } = Astro.props;
       }
 
       /* Las adaptamos al modo oscuro */
-      @media (prefers-color-scheme: dark) {
+      /* @media (prefers-color-scheme: dark) {
         :root {
           --accent-black: #e9ecef;
           --accent-white: #27272f;
@@ -94,7 +95,7 @@ const { title, metaDescription, metaTitle, metaImage } = Astro.props;
         .close-btn {
           color: var(--accent-black) !important;
         }
-      }
+      } */
 
       /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
       @media (prefers-reduced-motion: reduce) {
