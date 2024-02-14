@@ -20,7 +20,7 @@ const { projectTitle, images, projectCategory, projectDetails } = Astro.props;
 
 <article class="project">
   <header class="project__header">
-    <Btn text="back" url="/" id="prev"><Arrow slot="left" /></Btn>
+    <Btn text="back" id="back"><Arrow slot="left" /></Btn>
     <h1 class="title">{projectTitle}</h1>
     <span class="subtitle">{projectCategory}</span>
   </header>
@@ -51,6 +51,8 @@ const { projectTitle, images, projectCategory, projectDetails } = Astro.props;
     </p>
   </footer>
 </article>
+
+<script src="./scripts/backBtn.js"></script>
 
 <style>
   .project {
