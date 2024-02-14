@@ -77,18 +77,24 @@ const { title, metaDescription, metaTitle, metaImage } = Astro.props;
       }
 
       /* Las adaptamos al modo oscuro */
-      /* @media (prefers-color-scheme: dark) {
+      @media (prefers-color-scheme: dark) {
         :root {
-          --accent-black: #eeede9;
+          --accent-black: #e9ecef;
           --accent-white: #27272f;
         }
-        .slider-v2__header {
+        .slider-v2__header,
+        .slider {
           color: var(--accent-black) !important;
         }
+        .slider,
+        .slider__wrap {
+          border-color: #000000 !important;
+        }
+
         .close-btn {
           color: var(--accent-black) !important;
         }
-      } */
+      }
 
       /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
       @media (prefers-reduced-motion: reduce) {
