@@ -57,6 +57,12 @@ const { images } = Astro.props;
     height: 100%;
   }
 
+  @media screen and (max-width: 600px) {
+    .slider__item {
+      scroll-snap-align: center;
+    }
+  }
+
   @keyframes move-rigth {
     0% {
       transform: translateX(50%);

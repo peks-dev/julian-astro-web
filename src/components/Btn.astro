@@ -21,3 +21,11 @@ const { text, url, id, modifier } = Astro.props;
   }
   <slot name="right" />
 </button>
+
+<style>
+  @media screen and (min-width: 600px) {
+    .btn--project {
+      display: none;
+    }
+  }
+</style>

@@ -228,10 +228,6 @@ export const projectsData = [
         src: "/projects/narrative/face-values/face_value_2.webp",
         alt: "face value image 2",
       },
-      {
-        src: "/projects/narrative/face-values/face_value_5.webp",
-        alt: "face value image 5",
-      },
     ],
     teamMates: {
       dir: "sara gross",
