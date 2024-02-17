@@ -43,10 +43,14 @@ document.addEventListener("astro:page-load", () => {
 
   showSlide();
 
-  nextBtn.addEventListener("click", () => {
-    nextSlide();
-  });
-  prevBtn.addEventListener("click", () => {
-    prevSlide();
-  });
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      nextSlide();
+    });
+  }
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      prevSlide();
+    });
+  }
 });

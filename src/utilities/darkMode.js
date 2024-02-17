@@ -1,7 +1,4 @@
 document.addEventListener("astro:page-load", () => {
-  const sliderContainer = document.querySelector(".slider");
-  const sliderWrap = document.querySelector(".slider__wrap");
-
   function cambiarAparienciaSegunHora() {
     const currentHour = new Date().getHours();
 
@@ -11,11 +8,24 @@ document.addEventListener("astro:page-load", () => {
       document.documentElement.style.setProperty("--accent-black", "#e9ecef");
       document.documentElement.style.setProperty("--accent-white", "#27272f");
 
-      // correcciones slider principal
+      const sliderContainer = document.querySelector(".slider"); // header del slider principal
+      const sliderWrap = document.querySelector(".slider__wrap"); // slider principal en mobile
+      const aboutBorder = document.querySelector(".content-container"); // marco del about
+      const closeLightboxBtn = document.getElementById("closeBtn"); // boton de cerrar del lightbox
 
-      sliderContainer.style.color = "#e9ecef";
-      sliderContainer.style.borderColor = "#000000";
-      sliderWrap.style.borderColor = "#000000";
+      if (sliderContainer) {
+        sliderContainer.style.color = "#e9ecef";
+        sliderContainer.style.borderColor = "#000000";
+        sliderWrap.style.borderColor = "#000000";
+      }
+
+      if (aboutBorder) {
+        aboutBorder.style.borderColor = "#000000";
+      }
+
+      if (closeLightboxBtn) {
+        closeLightboxBtn.style.color = "#e9ecef";
+      }
     } else {
       // Modo claro para el resto del día
       document.documentElement.style.setProperty("--accent-black", "#27272f");

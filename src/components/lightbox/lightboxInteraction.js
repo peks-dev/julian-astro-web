@@ -14,13 +14,17 @@ document.addEventListener("astro:page-load", () => {
       if (img) {
         lightboxContent.src = img.src;
       }
-      lightbox.style.display = "flex";
+      if (lightbox) {
+        lightbox.style.display = "flex";
+      }
     });
   });
 
   // Cerrar el lightbox al hacer clic en el botón de cierre
   const closeBtn = document.getElementById("closeBtn");
-  closeBtn.addEventListener("click", () => {
-    lightbox.style.display = "none";
-  });
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+  }
 });
